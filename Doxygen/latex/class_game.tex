@@ -1,0 +1,153 @@
+\hypertarget{class_game}{}\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+Inheritance diagram for Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_game}{Game}} Constructor. \end{DoxyCompactList}\item 
+Scene\+Manager $\ast$ \mbox{\hyperlink{class_game_abf9a497b40bd181610ea3aee0d07d490}{Get\+Scene\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em This function returns a reference to the scene manager when called. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_ae4618ba40eabbbe65e35f1bb239aa29b}{setup}} ()
+\begin{DoxyCompactList}\small\item\em Function that is called when the application starts. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_a2ba00c3475d222573e5ad54b88b389b7}{key\+Pressed}} (const Keyboard\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em Check for Keypress inputs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_acc39660fc2452fc78ca45330d6032e5c}{create\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em This function initially creates the visual scene objects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a73744fbffd68a0ebadfedcecbfff3236}{create\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em This function creates the camera that the user will have in their viewport. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_af5b56d4ec80bba41a21763b66603c0da}{create\+Frame\+Listener}} ()
+\begin{DoxyCompactList}\small\item\em This creates a new frame listener of the existing frame listener class. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_game_a72772b628443c3675976d6b5e6c9ec2a}{$\sim$\+Game}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ogre\+Bites\+::\+Label $\ast$ \mbox{\hyperlink{class_game_a2ef98308a05c7413cb94ab6664f9b260}{score\+Label}}
+\item 
+Ogre\+Bites\+::\+Label $\ast$ \mbox{\hyperlink{class_game_a1ea959ece70f8f35a6927cf3826c029b}{lives\+Label}}
+\item 
+Ogre\+Bites\+::\+Label $\ast$ \mbox{\hyperlink{class_game_a95305336fbf88109da44e1fd4d44384b}{m\+Tpu}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_ad59df6562a58a614fda24622d3715b65}\label{class_game_ad59df6562a58a614fda24622d3715b65}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_game}{Game}} Constructor. 
+
+create ball and paddle objects in scene\mbox{\Hypertarget{class_game_a72772b628443c3675976d6b5e6c9ec2a}\label{class_game_a72772b628443c3675976d6b5e6c9ec2a}} 
+\index{Game@{Game}!````~Game@{$\sim$Game}}
+\index{````~Game@{$\sim$Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{$\sim$Game()}{~Game()}}
+{\footnotesize\ttfamily virtual Game\+::$\sim$\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_a73744fbffd68a0ebadfedcecbfff3236}\label{class_game_a73744fbffd68a0ebadfedcecbfff3236}} 
+\index{Game@{Game}!createCamera@{createCamera}}
+\index{createCamera@{createCamera}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{createCamera()}{createCamera()}}
+{\footnotesize\ttfamily void Game\+::create\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function creates the camera that the user will have in their viewport. 
+
+\mbox{\Hypertarget{class_game_af5b56d4ec80bba41a21763b66603c0da}\label{class_game_af5b56d4ec80bba41a21763b66603c0da}} 
+\index{Game@{Game}!createFrameListener@{createFrameListener}}
+\index{createFrameListener@{createFrameListener}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{createFrameListener()}{createFrameListener()}}
+{\footnotesize\ttfamily void Game\+::create\+Frame\+Listener (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This creates a new frame listener of the existing frame listener class. 
+
+\mbox{\Hypertarget{class_game_acc39660fc2452fc78ca45330d6032e5c}\label{class_game_acc39660fc2452fc78ca45330d6032e5c}} 
+\index{Game@{Game}!createScene@{createScene}}
+\index{createScene@{createScene}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{createScene()}{createScene()}}
+{\footnotesize\ttfamily void Game\+::create\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function initially creates the visual scene objects. 
+
+create tray manager and labels
+
+create ball
+
+create paddle\mbox{\Hypertarget{class_game_abf9a497b40bd181610ea3aee0d07d490}\label{class_game_abf9a497b40bd181610ea3aee0d07d490}} 
+\index{Game@{Game}!GetSceneManager@{GetSceneManager}}
+\index{GetSceneManager@{GetSceneManager}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{GetSceneManager()}{GetSceneManager()}}
+{\footnotesize\ttfamily Scene\+Manager $\ast$ Game\+::\+Get\+Scene\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function returns a reference to the scene manager when called. 
+
+\mbox{\Hypertarget{class_game_a2ba00c3475d222573e5ad54b88b389b7}\label{class_game_a2ba00c3475d222573e5ad54b88b389b7}} 
+\index{Game@{Game}!keyPressed@{keyPressed}}
+\index{keyPressed@{keyPressed}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{keyPressed()}{keyPressed()}}
+{\footnotesize\ttfamily bool Game\+::key\+Pressed (\begin{DoxyParamCaption}\item[{const Keyboard\+Event \&}]{evt }\end{DoxyParamCaption})}
+
+
+
+Check for Keypress inputs. 
+
+\mbox{\Hypertarget{class_game_ae4618ba40eabbbe65e35f1bb239aa29b}\label{class_game_ae4618ba40eabbbe65e35f1bb239aa29b}} 
+\index{Game@{Game}!setup@{setup}}
+\index{setup@{setup}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily void Game\+::setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that is called when the application starts. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_a1ea959ece70f8f35a6927cf3826c029b}\label{class_game_a1ea959ece70f8f35a6927cf3826c029b}} 
+\index{Game@{Game}!livesLabel@{livesLabel}}
+\index{livesLabel@{livesLabel}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{livesLabel}{livesLabel}}
+{\footnotesize\ttfamily Ogre\+Bites\+::\+Label$\ast$ Game\+::lives\+Label}
+
+\mbox{\Hypertarget{class_game_a95305336fbf88109da44e1fd4d44384b}\label{class_game_a95305336fbf88109da44e1fd4d44384b}} 
+\index{Game@{Game}!mTpu@{mTpu}}
+\index{mTpu@{mTpu}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mTpu}{mTpu}}
+{\footnotesize\ttfamily Ogre\+Bites\+::\+Label$\ast$ Game\+::m\+Tpu}
+
+\mbox{\Hypertarget{class_game_a2ef98308a05c7413cb94ab6664f9b260}\label{class_game_a2ef98308a05c7413cb94ab6664f9b260}} 
+\index{Game@{Game}!scoreLabel@{scoreLabel}}
+\index{scoreLabel@{scoreLabel}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{scoreLabel}{scoreLabel}}
+{\footnotesize\ttfamily Ogre\+Bites\+::\+Label$\ast$ Game\+::score\+Label}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_game_8h}{Game.\+h}}\item 
+\mbox{\hyperlink{_game_8cpp}{Game.\+cpp}}\end{DoxyCompactItemize}

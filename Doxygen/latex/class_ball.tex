@@ -1,0 +1,195 @@
+\hypertarget{class_ball}{}\doxysection{Ball Class Reference}
+\label{class_ball}\index{Ball@{Ball}}
+
+
+{\ttfamily \#include $<$Ball.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ball_a86a144d3dad6c953e422e32435923bbb}{Ball}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{class_ball}{Ball}} class \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_aab512052482bb8059e9996cb792fc99e}{Update}} (const Ogre\+::\+Frame\+Event \&fe)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_ball}{Ball}} update function to give it movement \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a02d294cd05ce7db0bfb431b4847b6e5e}{ReflectX}} ()
+\item 
+void \mbox{\hyperlink{class_ball_ab06f5b516d1b41a48afd008e6dbea10d}{ReflectY}} ()
+\item 
+int \mbox{\hyperlink{class_ball_a06812f26df422f7d45619acedd45eb19}{Get\+Lives}} ()
+\item 
+int \mbox{\hyperlink{class_ball_a1b48457bb5a539fdda13b8cea12dadd6}{Get\+Score}} ()
+\item 
+void \mbox{\hyperlink{class_ball_a778c4307f16f3ec451d73c0f66350904}{Respawn}} ()
+\item 
+void \mbox{\hyperlink{class_ball_a86718b084cb5a3ca4006f6bc3010f7ee}{Collision\+Check}} (\mbox{\hyperlink{class_paddle}{Paddle}} $\ast$ref)
+\begin{DoxyCompactList}\small\item\em Check collision between ball and paddle + bounds \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a8b7c6e6d78a3c6aa51865d840317cd12}{Setup}} ()
+\begin{DoxyCompactList}\small\item\em This function sets the initial position and scale of the ball \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a7cc23f5b984d9797b6337c950ba6ec71}{Set\+Node}} (Ogre\+::\+Scene\+Node $\ast$node)
+\item 
+void \mbox{\hyperlink{class_ball_a2c1bee0dcc7815bfb861f7dc58606b6d}{Set\+Lives}} (int lives)
+\item 
+void \mbox{\hyperlink{class_ball_ac476a6b5b03d3c725586ef0d466279c3}{Set\+Score}} (int score)
+\item 
+\mbox{\hyperlink{class_ball_a20f2f6ac0bf648f406a8e12e63429fcd}{$\sim$\+Ball}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_ball_a9f721ae58026fc5a17afa0f89dee120a}{Speed}}
+\item 
+int \mbox{\hyperlink{class_ball_af40b48e08bb029f78326accd4c48972c}{Score}}
+\item 
+int \mbox{\hyperlink{class_ball_af27bd650d309a88a7f7a07e909d8e805}{Lives}}
+\item 
+\mbox{\hyperlink{class_paddle}{Paddle}} $\ast$ \mbox{\hyperlink{class_ball_a155b94e17f1b21b9226acd0893a1ed0a}{paddle}}
+\item 
+Ogre\+::\+Vector3 \mbox{\hyperlink{class_ball_a8947f8d99e8f0c2132291c3d32168f58}{direction}}
+\item 
+Ogre\+::\+Scene\+Node $\ast$ \mbox{\hyperlink{class_ball_a3b8120055515b1643ed2a1ecab59ec02}{ball\+Node}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ball_a86a144d3dad6c953e422e32435923bbb}\label{class_ball_a86a144d3dad6c953e422e32435923bbb}} 
+\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Ball()}{Ball()}}
+{\footnotesize\ttfamily Ball\+::\+Ball (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{class_ball}{Ball}} class 
+
+\mbox{\Hypertarget{class_ball_a20f2f6ac0bf648f406a8e12e63429fcd}\label{class_ball_a20f2f6ac0bf648f406a8e12e63429fcd}} 
+\index{Ball@{Ball}!````~Ball@{$\sim$Ball}}
+\index{````~Ball@{$\sim$Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{$\sim$Ball()}{~Ball()}}
+{\footnotesize\ttfamily Ball\+::$\sim$\+Ball (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ball_a86718b084cb5a3ca4006f6bc3010f7ee}\label{class_ball_a86718b084cb5a3ca4006f6bc3010f7ee}} 
+\index{Ball@{Ball}!CollisionCheck@{CollisionCheck}}
+\index{CollisionCheck@{CollisionCheck}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{CollisionCheck()}{CollisionCheck()}}
+{\footnotesize\ttfamily void Ball\+::\+Collision\+Check (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_paddle}{Paddle}} $\ast$}]{ref }\end{DoxyParamCaption})}
+
+
+
+Check collision between ball and paddle + bounds 
+
+check collision with boundries\mbox{\Hypertarget{class_ball_a06812f26df422f7d45619acedd45eb19}\label{class_ball_a06812f26df422f7d45619acedd45eb19}} 
+\index{Ball@{Ball}!GetLives@{GetLives}}
+\index{GetLives@{GetLives}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{GetLives()}{GetLives()}}
+{\footnotesize\ttfamily int Ball\+::\+Get\+Lives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_ball_a1b48457bb5a539fdda13b8cea12dadd6}\label{class_ball_a1b48457bb5a539fdda13b8cea12dadd6}} 
+\index{Ball@{Ball}!GetScore@{GetScore}}
+\index{GetScore@{GetScore}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{GetScore()}{GetScore()}}
+{\footnotesize\ttfamily int Ball\+::\+Get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_ball_a02d294cd05ce7db0bfb431b4847b6e5e}\label{class_ball_a02d294cd05ce7db0bfb431b4847b6e5e}} 
+\index{Ball@{Ball}!ReflectX@{ReflectX}}
+\index{ReflectX@{ReflectX}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{ReflectX()}{ReflectX()}}
+{\footnotesize\ttfamily void Ball\+::\+ReflectX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_ball_ab06f5b516d1b41a48afd008e6dbea10d}\label{class_ball_ab06f5b516d1b41a48afd008e6dbea10d}} 
+\index{Ball@{Ball}!ReflectY@{ReflectY}}
+\index{ReflectY@{ReflectY}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{ReflectY()}{ReflectY()}}
+{\footnotesize\ttfamily void Ball\+::\+ReflectY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_ball_a778c4307f16f3ec451d73c0f66350904}\label{class_ball_a778c4307f16f3ec451d73c0f66350904}} 
+\index{Ball@{Ball}!Respawn@{Respawn}}
+\index{Respawn@{Respawn}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Respawn()}{Respawn()}}
+{\footnotesize\ttfamily void Ball\+::\+Respawn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_ball_a2c1bee0dcc7815bfb861f7dc58606b6d}\label{class_ball_a2c1bee0dcc7815bfb861f7dc58606b6d}} 
+\index{Ball@{Ball}!SetLives@{SetLives}}
+\index{SetLives@{SetLives}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{SetLives()}{SetLives()}}
+{\footnotesize\ttfamily void Ball\+::\+Set\+Lives (\begin{DoxyParamCaption}\item[{int}]{lives }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_ball_a7cc23f5b984d9797b6337c950ba6ec71}\label{class_ball_a7cc23f5b984d9797b6337c950ba6ec71}} 
+\index{Ball@{Ball}!SetNode@{SetNode}}
+\index{SetNode@{SetNode}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{SetNode()}{SetNode()}}
+{\footnotesize\ttfamily void Ball\+::\+Set\+Node (\begin{DoxyParamCaption}\item[{Ogre\+::\+Scene\+Node $\ast$}]{node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_ball_ac476a6b5b03d3c725586ef0d466279c3}\label{class_ball_ac476a6b5b03d3c725586ef0d466279c3}} 
+\index{Ball@{Ball}!SetScore@{SetScore}}
+\index{SetScore@{SetScore}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{SetScore()}{SetScore()}}
+{\footnotesize\ttfamily void Ball\+::\+Set\+Score (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_ball_a8b7c6e6d78a3c6aa51865d840317cd12}\label{class_ball_a8b7c6e6d78a3c6aa51865d840317cd12}} 
+\index{Ball@{Ball}!Setup@{Setup}}
+\index{Setup@{Setup}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Setup()}{Setup()}}
+{\footnotesize\ttfamily void Ball\+::\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function sets the initial position and scale of the ball 
+
+\mbox{\Hypertarget{class_ball_aab512052482bb8059e9996cb792fc99e}\label{class_ball_aab512052482bb8059e9996cb792fc99e}} 
+\index{Ball@{Ball}!Update@{Update}}
+\index{Update@{Update}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Ball\+::\+Update (\begin{DoxyParamCaption}\item[{const Ogre\+::\+Frame\+Event \&}]{fe }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_ball}{Ball}} update function to give it movement 
+
+move ball every frame
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ball_a3b8120055515b1643ed2a1ecab59ec02}\label{class_ball_a3b8120055515b1643ed2a1ecab59ec02}} 
+\index{Ball@{Ball}!ballNode@{ballNode}}
+\index{ballNode@{ballNode}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{ballNode}{ballNode}}
+{\footnotesize\ttfamily Ogre\+::\+Scene\+Node$\ast$ Ball\+::ball\+Node}
+
+\mbox{\Hypertarget{class_ball_a8947f8d99e8f0c2132291c3d32168f58}\label{class_ball_a8947f8d99e8f0c2132291c3d32168f58}} 
+\index{Ball@{Ball}!direction@{direction}}
+\index{direction@{direction}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily Ogre\+::\+Vector3 Ball\+::direction}
+
+\mbox{\Hypertarget{class_ball_af27bd650d309a88a7f7a07e909d8e805}\label{class_ball_af27bd650d309a88a7f7a07e909d8e805}} 
+\index{Ball@{Ball}!Lives@{Lives}}
+\index{Lives@{Lives}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Lives}{Lives}}
+{\footnotesize\ttfamily int Ball\+::\+Lives}
+
+\mbox{\Hypertarget{class_ball_a155b94e17f1b21b9226acd0893a1ed0a}\label{class_ball_a155b94e17f1b21b9226acd0893a1ed0a}} 
+\index{Ball@{Ball}!paddle@{paddle}}
+\index{paddle@{paddle}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{paddle}{paddle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_paddle}{Paddle}}$\ast$ Ball\+::paddle}
+
+\mbox{\Hypertarget{class_ball_af40b48e08bb029f78326accd4c48972c}\label{class_ball_af40b48e08bb029f78326accd4c48972c}} 
+\index{Ball@{Ball}!Score@{Score}}
+\index{Score@{Score}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Score}{Score}}
+{\footnotesize\ttfamily int Ball\+::\+Score}
+
+\mbox{\Hypertarget{class_ball_a9f721ae58026fc5a17afa0f89dee120a}\label{class_ball_a9f721ae58026fc5a17afa0f89dee120a}} 
+\index{Ball@{Ball}!Speed@{Speed}}
+\index{Speed@{Speed}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Speed}{Speed}}
+{\footnotesize\ttfamily float Ball\+::\+Speed}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_ball_8h}{Ball.\+h}}\item 
+\mbox{\hyperlink{_ball_8cpp}{Ball.\+cpp}}\end{DoxyCompactItemize}
